@@ -10,6 +10,7 @@ class createComposite(object):
     def getMedoidAndStdevs(self, collection):
         medoidIncludeBands = self.envs.medoidIncludeBands
         stdevIncludeBands = self.envs.stdevIncludeBands
+        otherIncludeBands = self.envs.otherIncludeBands
         # Find band names in first image
         f = ee.Image(collection.first())
         bandNames = f.bandNames()
@@ -21,9 +22,9 @@ class createComposite(object):
 
         medBandNumbers = ee.List.sequence(1, medBandList.length())
 
-        otherBands = bandNames.removeAll(medoidIncludeBands)
+        # otherBands = bandNames.removeAll(medoidIncludeBands)
 
-        others = collection.select(otherBands).mean()
+        others = collection.select(otherIncludeBands).mean()
 
         # Find the squared difference from the median for each image
         def findMedianDistance(img):

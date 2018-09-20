@@ -21,9 +21,9 @@ def setExportProperties(image, args):
         "MAX_DISTANCE", envs.MAX_DISTANCE,
         "Terrain_Scale", envs.terrainScale,
         "system:time_start", date.millis(),
-        "zScoreThresh", envs.zScoreThresh,
-        "shadowSumThresh", envs.shadowSumThresh,
-        "cloudScoreThresh", envs.cloudScoreThresh,
+        "zScoreThreshold", envs.zScoreThresh,
+        "shadowSumThreshold", envs.shadowSumThresh,
+        "cloudScoreThreshold", envs.cloudScoreThresh,
         "cloudScorePctl", envs.cloudScorePctl,
         "contractPixels", envs.contractPixels,
         "dilatePixels", envs.dilatePixels,
@@ -37,7 +37,7 @@ def exportHelper(image, assetID, imageCollectionID, args):
 
     task = ee.batch.Export.image.toAsset(
         image=ee.Image(image),
-        description=assetID + t,
+        description=args['season']+"-"+assetID +"-"+ t,
         assetId=imageCollectionID+assetID,
         region=args['region']['coordinates'],
         maxPixels=1e13,
@@ -48,7 +48,6 @@ def exportHelper(image, assetID, imageCollectionID, args):
     print('Started Exporting '+assetID+t)
 
 def getComposites(args):
-    envs = environment()
     if not('maxCloudCover' in args):
         args['maxCloudCover'] = envs.defaults['maxCloudCover']
     if not('season' in args):
@@ -58,7 +57,7 @@ def getComposites(args):
     importImg = importImages()
     imageColl = importImg.getImagesInAYear(args)
     print("Number of Images Found: ", imageColl.size().getInfo())
-    imageColl = cloudBurst().runModel(imageColl, envs.testRegion)
+    imageColl = cloudBurst().runModel(imageColl, args['region'])
     imageColl = brdf().runModel(imageColl)
     imageColl = terrainCorrection().runModel(imageColl)
     composite = createComposite().getMedoidAndStdevs(imageColl)
@@ -68,7 +67,15 @@ def getComposites(args):
     exportHelper(composite, assetID, imageCollectionID, args)
 
 if (__name__ == '__main__'):
-    season = 'dryhot'
-    # year = 2003
-    for year in range(2000,2001):
-        getComposites({'year': year, 'region': envs.testRegion, 'season':season})
+    season = 'rainy'
+    year = 2015
+    # nepal = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw').filter(ee.Filter.inList('Country', ['Nepal'])).first().geometry().getInfo()
+    # print(nepal)
+
+    nepal = envs.nepal
+    # getComposites({'year': year, 'region': nepal, 'season': season})
+
+    for year in range(2012,2013):
+        getComposites({'year': year, 'region': nepal, 'season': 'dryhot'})
+        # getComposites({'year': year, 'region': nepal, 'season': 'drycool'})
+        getComposites({'year': year, 'region': nepal, 'season': 'rainy'})

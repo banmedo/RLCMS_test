@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51a292db-db3a-49a8-91c2-2a08bee21587" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training/addCovariates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training/classify.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training/environment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Training/sample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/brdf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudBurst.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/cloudBurst.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compositing.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/compositing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/importImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/importImages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/terrain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terrain2.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/terrain2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,93 +27,60 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="RLCMS_python" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file leaf-file-name="classify.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Training/classify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="578">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="WhittakerSmoothing.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/WhittakerSmoothing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="683">
+              <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+              <folding>
+                <element signature="e#624#643#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/environment.py">
+      <file leaf-file-name="whittakerExample.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/whittakerExample.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="61" selection-end-column="31" />
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="terrain2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terrain2.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Training/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="78" column="59" lean-forward="true" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
+            <state relative-caret-position="-201">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cloudBurst.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloudBurst.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="importImages.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/importImages.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="137" column="29" lean-forward="true" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
-              <folding>
-                <element signature="e#235#244#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="brdf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/brdf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3128">
-              <caret line="184" column="88" selection-start-line="184" selection-start-column="88" selection-end-line="184" selection-end-column="88" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="compositing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compositing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,21 +97,22 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>var</find>
       <find>self.PI</find>
       <find>self.UPPER_RIGHT</find>
-      <find>//</find>
       <find>var</find>
-      <find>addBands</find>
       <find>self.shadowValue</find>
       <find>self.dilatePixels</find>
+      <find>addBands</find>
+      <find>testRe</find>
+      <find>//</find>
+      <find>var</find>
     </findStrings>
     <replaceStrings>
       <replace>self.envs.PI</replace>
       <replace>self.envs.UPPER_RIGHT</replace>
-      <replace>#</replace>
       <replace>self.envs.shadowValue</replace>
       <replace>self.envs.dilatePixels</replace>
+      <replace>#</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -141,13 +125,30 @@
         <option value="$PROJECT_DIR$/init.py" />
         <option value="$PROJECT_DIR$/terrain.py" />
         <option value="$PROJECT_DIR$/brdf.py" />
-        <option value="$PROJECT_DIR$/terrain2.py" />
-        <option value="$PROJECT_DIR$/compositing.py" />
         <option value="$PROJECT_DIR$/importImages.py" />
-        <option value="$PROJECT_DIR$/environment.py" />
-        <option value="$PROJECT_DIR$/cloudBurst.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/cloudBurst.py" />
+        <option value="$PROJECT_DIR$/terrain2.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/environment.py" />
+        <option value="$PROJECT_DIR$/compositing.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/terrain2.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/cloudBurst.py" />
+        <option value="$PROJECT_DIR$/Training/addCovariates.py" />
+        <option value="$PROJECT_DIR$/Training/sample.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/environment.py" />
+        <option value="$PROJECT_DIR$/Training/environment.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/importImages.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/main.py" />
+        <option value="$PROJECT_DIR$/Training/main.py" />
+        <option value="$PROJECT_DIR$/Classification/__init__.py" />
+        <option value="$PROJECT_DIR$/Training/__init__.py" />
+        <option value="$PROJECT_DIR$/Classification/main.py" />
+        <option value="$PROJECT_DIR$/Training/classify.py" />
+        <option value="$PROJECT_DIR$/test/utils.py" />
+        <option value="$PROJECT_DIR$/test/whittakerExample.py" />
+        <option value="$PROJECT_DIR$/test/WhittakerSmoothing.py" />
       </list>
     </option>
   </component>
@@ -157,7 +158,9 @@
     <option name="width" value="1400" />
     <option name="height" value="980" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -170,6 +173,11 @@
             <path>
               <item name="RLCMS_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="RLCMS_python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RLCMS_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RLCMS_python" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,6 +196,12 @@
         <option name="myModuleName" value="RLCMS_python" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\nkdev\webdev\RLCMS_python\CreateComposites" />
+      <recent name="E:\nkdev\webdev\RLCMS_python" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -227,17 +241,17 @@
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25331724" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.13510254" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32964602" />
-      <window_info active="true" anchor="bottom" id="Event Log" sideWeight="0.50060314" side_tool="true" visible="true" weight="0.2289823" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50060314" side_tool="true" weight="0.2289823" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" weight="0.32964602" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49939686" visible="true" weight="0.2289823" />
+      <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" weight="0.13510254" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49939686" weight="0.2289823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Favorites" sideWeight="0.50165015" side_tool="true" weight="0.13510254" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -245,18 +259,42 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49834985" visible="true" weight="0.13510254" />
+      <window_info id="Structure" order="2" sideWeight="0.50165015" side_tool="true" weight="0.13510254" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32964602" />
+      <window_info anchor="bottom" id="Python Console" order="0" weight="0.32964602" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49939686" weight="0.2289823" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50060314" side_tool="true" weight="0.2289823" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info id="Favorites" order="0" sideWeight="0.50165015" side_tool="true" weight="0.13510254" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/importData.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/init.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/init.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/terrain.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/terrain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1836">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
@@ -266,7 +304,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/brdf.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateComposites/brdf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3128">
           <caret line="184" column="88" selection-start-line="184" selection-start-column="88" selection-end-line="184" selection-end-column="88" />
@@ -276,67 +324,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terrain2.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/compositing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="59" lean-forward="true" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
+        <state relative-caret-position="254">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compositing.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/terrain2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="751">
+          <caret line="138" column="17" lean-forward="true" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="17" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloudBurst.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/cloudBurst.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="632">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/importImages.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="137" column="29" lean-forward="true" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
+        <state relative-caret-position="102">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training/sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
-            <element signature="e#235#244#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/environment.py">
+    <entry file="file://$PROJECT_DIR$/Training/addCovariates.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="61" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/importImages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="343">
+          <caret line="105" column="41" lean-forward="true" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+          <folding>
+            <element signature="e#235#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateComposites/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="80" column="23" lean-forward="true" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classification/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classification/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-end-line="89" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-201">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training/classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/whittakerExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/WhittakerSmoothing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+          <folding>
+            <element signature="e#624#643#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

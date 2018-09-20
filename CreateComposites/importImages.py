@@ -69,7 +69,7 @@ class importImages(object):
         if (season == 'drycool'):
             endyear += 1
 
-        landsat5 = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR').filter(ee.Filter.calendarRange(year, endyear, 'year'))\
+        landsat5 = ee.ImageCollection('LANDSAT/LT05/C01/T1_SR').filter(ee.Filter.calendarRange(year, endyear, 'year'))\
             .filter(ee.Filter.calendarRange(self.env.seasons[season][0], self.env.seasons[season][1], 'day_of_year'))\
             .filterBounds(region)\
             .filter(ee.Filter.lte('CLOUD_COVER', 30))\
@@ -81,20 +81,20 @@ class importImages(object):
             .filter(ee.Filter.calendarRange(self.env.seasons[season][0], self.env.seasons[season][1], 'day_of_year'))\
             .filterBounds(region)\
             .filter(ee.Filter.lte('CLOUD_COVER', 30))\
-            .select(self.env.commonBands['l5'], self.env.renameBands)
+            .select(self.env.commonBands['l7'], self.env.renameBands)
 
         landsat7 = self._scaleImage(landsat7, self.env.scale['l7'])
 
-        landsat8 = ee.ImageCollection('LANDSAT/LT05/C01/T1_SR').filter(ee.Filter.calendarRange(year, endyear, 'year'))\
+        landsat8 = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR').filter(ee.Filter.calendarRange(year, endyear, 'year'))\
             .filter(ee.Filter.calendarRange(self.env.seasons[season][0], self.env.seasons[season][1], 'day_of_year'))\
             .filterBounds(region)\
             .filter(ee.Filter.lte('CLOUD_COVER', 30))\
-            .select(self.env.commonBands['l5'], self.env.renameBands)
+            .select(self.env.commonBands['l8'], self.env.renameBands)
 
         landsat8 = self._scaleImage(landsat8, self.env.scale['l8'])
 
         landsatMerged = landsat5
-        if (SLC and year < 2004):
+        if (SLC and (year < 2004 or year==2012)):
             landsatMerged = landsatMerged.merge(landsat7).merge(landsat8)
         else:
             landsatMerged = landsatMerged.merge(landsat8)

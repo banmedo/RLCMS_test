@@ -1,4 +1,5 @@
 import ee
+ee.Initialize()
 
 class environment(object):
     def __init__(self):
@@ -6,6 +7,8 @@ class environment(object):
         #export params
         self.collFolder = 'projects/servir-hkh/nk-comp/'
         self.exportScale = 30
+
+        self.nepal = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw').filter(ee.Filter.inList('Country', ['Nepal'])).first().geometry().getInfo()
 
         # setting up variables
         self.seasons = {
@@ -16,7 +19,7 @@ class environment(object):
         }
 
         self.defaults = {
-            'maxCloudCover': 90,
+            'maxCloudCover': 80,
             'season': 'drycool',
             'SLC': True
         }
@@ -50,6 +53,8 @@ class environment(object):
         self.shadowValue = 8
         self.snowValue = 16
 
+        self.LTAimageId = 'projects/servir-hkh/nk-comp/shadowLTA'
+
         # cloudScoreThresh: If using the cloudScoreTDOMShift method - Threshold for cloud
         # masking(lower number masks more clouds.Between 10 and 30 generally
         #  works best)
@@ -71,7 +76,7 @@ class environment(object):
         self.UPPER_RIGHT = 3
 
         # parameters for terrain correction
-        self.terrainScale = 300
+        self.terrainScale = 30
 
         self.demID = 'CGIAR/SRTM90_V4'
         self.dem30m = 'USGS/SRTMGL1_003'
@@ -82,3 +87,4 @@ class environment(object):
         self.medoidIncludeBands = ['blue', 'green', 'red', 'nir', 'swir1', 'swir2']
         self.medianIncludeBands = ['blue', 'green', 'red', 'nir', 'swir1', 'swir2']
         self.stdevIncludeBands = ['blue', 'green', 'red', 'nir', 'swir1', 'swir2']
+        self.otherIncludeBands = []

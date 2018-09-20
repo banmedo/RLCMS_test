@@ -57,7 +57,7 @@ class terrainCorrection(object):
         scale = self.envs.terrainScale
 
         geom = img.geometry().buffer(-5000)
-        def apply_SCSccorr(band):
+        def apply_SCSccorr_old(band):
             method = 'SCSc'
             out = img_plus_ic_mask2.select(['IC', band]).reduceRegion(
                 reducer =  ee.Reducer.linearFit(),  # Compute coefficients: a(slope), b(offset), c(b / a)
@@ -82,13 +82,55 @@ class terrainCorrection(object):
 
             return ee.Image(SCSc_output).set(band+'_scale', out_a, band+'_offset', out_b, band+'_offset_scale_ratio', out_c)
 
+        def apply_SCSccorr(band):
+            method = 'SCSc';
+
+            out = img_plus_ic_mask2.select('IC', band).addBands(ee.Image(1)).reduceRegion(
+                reducer=ee.Reducer.linearRegression(2, 1), \
+                geometry=ee.Geometry(img.geometry().buffer(-5000)), \
+                scale=300, \
+                bestEffort=True,
+                maxPixels=1e10)
+
+            # out_a = ee.Number(out.get('scale'));
+            # out_b = ee.Number(out.get('offset'));
+            # out_c = ee.Number(out.get('offset')).divide(ee.Number(out.get('scale')));
+
+            fit = out.combine({"coefficients": ee.Array([[1], [1]])}, False);
+
+            # Get the coefficients as a nested list,
+            # cast it to an array, and get just the selected column
+            out_a = (ee.Array(fit.get('coefficients')).get([0, 0]));
+            out_b = (ee.Array(fit.get('coefficients')).get([1, 0]));
+            out_c = out_a.divide(out_b)
+
+            # apply the SCSc correction
+            SCSc_output = img_plus_ic_mask2.expression("((image * (cosB * cosZ + cvalue)) / (ic + cvalue))", {
+                'image': img_plus_ic_mask2.select([band]),
+                'ic': img_plus_ic_mask2.select('IC'),
+                'cosB': img_plus_ic_mask2.select('cosS'),
+                'cosZ': img_plus_ic_mask2.select('cosZ'),
+                'cvalue': out_c});
+
+            return ee.Image(SCSc_output);
+
+            # img_SCSccorr = ee.Image([apply_SCSccorr(band) for band in bandList]).addBands(img_plus_ic.select('IC'));
+
+        # img_SCSccorr = applyBands(img).select(bandList).addBands(img_plus_ic.select('IC'))
+        #
+        # bandList_IC = ee.List([bandList, 'IC']).flatten();
+        #
+        # img_SCSccorr = img_SCSccorr.unmask(img_plus_ic.select(bandList_IC)).select(bandList);
+        #
+        # return img_SCSccorr.unmask(img_plus_ic.select(bandList))
+
+
         img_SCSccorr = ee.Image([apply_SCSccorr(band) for band in bandList]).addBands(img_plus_ic.select('IC'));
-        return img_SCSccorr
 
         bandList_IC = ee.List([bandList, 'IC']).flatten()
-        return img_SCSccorr.unmask(img_plus_ic.select(bandList_IC))\
-            .addBands(mask1.rename(['initMask']))\
-            .addBands(mask2.rename(['corrMask']))
+        return img_SCSccorr.unmask(img_plus_ic.select(bandList_IC))
+            # .addBands(mask1.rename(['initMask']))\
+            # .addBands(mask2.rename(['corrMask']))
 
     def runModel(self, imageCollection):
         ic = imageCollection.map(self.topoCorr_IC)

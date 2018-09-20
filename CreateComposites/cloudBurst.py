@@ -8,20 +8,9 @@ class cloudBurst(object):
         ee.Initialize()
         self.envs = environment()
 
-        # self.envs.cloudValue = 32
-        # self.envs.shadowValue = 8
-        # self.envs.snowValue = 16
-        #
-        # # cloudScoreThresh: If using the cloudScoreTDOMShift method - Threshold for cloud
-        # # masking(lower number masks more clouds.Between 10 and 30 generally
-        # #  works best)
-        #
-        # self.envs.zScoreThresh = -1
-        # self.envs.shadowSumThresh = 0.35
-        # self.envs.cloudScoreThresh = 20
-        # self.envs.cloudScorePctl = 0
-        # self.envs.contractPixels = 1.5
-        # self.envs.dilatePixels = 2.5
+        # cloudScoreThresh: If using the cloudScoreTDOMShift method - Threshold for cloud
+        # masking(lower number masks more clouds.Between 10 and 30 generally
+        #  works best)
 
     # helper function to apply an expression and linearly rescale the output.
     # Used in the sentinelCloudScore function below.
@@ -35,8 +24,9 @@ class cloudBurst(object):
         return img.updateMask(cloud.Or(cloud_shadow).Not())
 
     def _snowMaskQA(self, img):
-        snow = img.select('pixel_qa').bitwiseAnd(self.envs.snowValue).neq(0)
-        return img.updateMask(snow)
+        snow = img.select('pixel_qa').bitwiseAnd(self.envs.snowValue)
+        return snow
+        # return img.updateMask(snow)
 
     def _landsatCloudScoreMask(self, img):
 
@@ -64,11 +54,17 @@ class cloudBurst(object):
     def _shadowMask(self, collection, studyArea):
         shadowSumBands  = ['nir', 'swir1']
 
-        allCollection = importImages().getImagesInYearRange({'startyear':2000,'endyear':2010,'region':studyArea})\
-            .select(shadowSumBands)
+        # allCollection = importImages().getImagesInYearRange({'startyear':2000,'endyear':2001,'region':studyArea})\
+        #     .select(shadowSumBands)
+        # allCollection = collection
         # Get some pixel - wise stats for the time series
-        irStdDev = allCollection.select(shadowSumBands).reduce(ee.Reducer.stdDev())
-        irMean = allCollection.select(shadowSumBands).mean()
+        # irStdDev = allCollection.select(shadowSumBands).reduce(ee.Reducer.stdDev())
+        # irMean = allCollection.select(shadowSumBands).mean()
+
+        LTA = ee.Image(self.envs.LTAimageId).multiply(1 / 10000);
+        irStdDev = LTA.select(['nir_stdDev', 'swir1_stdDev'], ['nir', 'swir1']);
+        irMean = LTA.select(['nir', 'swir1'])
+
         def maskDarkOutliers(img):
             zScore = img.select(shadowSumBands).subtract(irMean).divide(irStdDev)
             irSum = img.select(shadowSumBands).reduce(ee.Reducer.sum())
