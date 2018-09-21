@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51a292db-db3a-49a8-91c2-2a08bee21587" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Training/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Training/addCovariates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Training/classify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Training/environment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Training/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Training/sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/brdf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudBurst.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/cloudBurst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compositing.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/compositing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/importImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/importImages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/terrain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terrain2.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/terrain2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smoothing/WhittakerSmoothing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Smoothing/WhittakerSmoothing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,10 +30,10 @@
         </entry>
       </file>
       <file leaf-file-name="WhittakerSmoothing.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/WhittakerSmoothing.py">
+        <entry file="file://$PROJECT_DIR$/Smoothing/WhittakerSmoothing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+            <state relative-caret-position="224">
+              <caret line="67" column="63" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
               <folding>
                 <element signature="e#624#643#0" expanded="true" />
               </folding>
@@ -57,7 +42,7 @@
         </entry>
       </file>
       <file leaf-file-name="whittakerExample.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/whittakerExample.py">
+        <entry file="file://$PROJECT_DIR$/Smoothing/whittakerExample.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
               <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
@@ -66,7 +51,7 @@
         </entry>
       </file>
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/utils.py">
+        <entry file="file://$PROJECT_DIR$/Smoothing/utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
               <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
@@ -149,6 +134,7 @@
         <option value="$PROJECT_DIR$/test/utils.py" />
         <option value="$PROJECT_DIR$/test/whittakerExample.py" />
         <option value="$PROJECT_DIR$/test/WhittakerSmoothing.py" />
+        <option value="$PROJECT_DIR$/Smoothing/WhittakerSmoothing.py" />
       </list>
     </option>
   </component>
@@ -177,7 +163,7 @@
             <path>
               <item name="RLCMS_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="RLCMS_python" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Smoothing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -444,24 +430,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/utils.py">
+    <entry file="file://$PROJECT_DIR$/Smoothing/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/whittakerExample.py">
+    <entry file="file://$PROJECT_DIR$/Smoothing/whittakerExample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/WhittakerSmoothing.py">
+    <entry file="file://$PROJECT_DIR$/Smoothing/WhittakerSmoothing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+        <state relative-caret-position="224">
+          <caret line="67" column="63" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
           <folding>
             <element signature="e#624#643#0" expanded="true" />
           </folding>

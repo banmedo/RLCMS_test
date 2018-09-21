@@ -65,7 +65,7 @@ def whittakerSmoothing(imageCollection, isCompositional = False, lamb = 5):
         ic = ic.map(clampImage)
 
     arrayImage = original.toArray()
-    coeffimage = ee.Image(hat_matrix)
+    coeffimage = ee.Image(hat_matrix).updateMask(arrayImage.mask())
     smoothImage = coeffimage.matrixSolve(arrayImage)
 
     def getImageId(image):
