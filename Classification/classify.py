@@ -1,5 +1,5 @@
 import ee
-from addCovariates import addCovariates
+from Training.addCovariates import addCovariates
 
 ee.Initialize()
 

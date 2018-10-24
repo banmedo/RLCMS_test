@@ -52,14 +52,15 @@ class environment(object):
         self.boundary = nepalBounds.buffer(20000).getInfo()
 
         # self.trainingPoints = ee.FeatureCollection('projects/servir-hkh/RLCMS_Nepal07302018/Training_Sample/Nepal_samples_all_validation')
-        self.trainingPoints = ee.FeatureCollection("projects/servir-hkh/nk-comp/training-with-year")
-        # training data contains following number of points per classes
-        # cropland: 2291
-        # forest: 4070
-        # grassland: 974
-        # otherland: 2321
-        # settlement: 547
-        # wetland: 115
+        self.sampledPoints = ee.FeatureCollection('ft:19bCYESQ-6vx3_ZOaLkycfIoSqjYcwJPXIz8LXyOw')
+        self.sampledPointsYearly = ee.FeatureCollection('ft:1MNedvQZU_EqeffoGxLoLxgSgFpl0fjLnHkAgQX0x')
+        # training data contains following classes
+        # cropland
+        # forest
+        # grassland
+        # otherland
+        # settlement
+        # wetland
 
         self.inputLandClass = 'land_use_c'
         self.yearField = 'rs_date_ye'

@@ -5,10 +5,11 @@ class environment(object):
     def __init__(self):
 
         #export params
-        self.collFolder = 'projects/servir-hkh/nk-comp/'
+        self.collFolder = 'projects/servir-hkh/ncomp_seasonal_30/'
+        self.yearlyCollFolder = 'projects/servir-hkh/ncomp_yearly_30/'
         self.exportScale = 30
 
-        self.nepal = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw').filter(ee.Filter.inList('Country', ['Nepal'])).first().geometry().getInfo()
+        self.nepal = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw').filter(ee.Filter.inList('Country', ['Nepal'])).first().geometry().buffer(20000).getInfo()
 
         # setting up variables
         self.seasons = {
@@ -19,7 +20,7 @@ class environment(object):
         }
 
         self.defaults = {
-            'maxCloudCover': 80,
+            'maxCloudCover': 30,
             'season': 'drycool',
             'SLC': True
         }
@@ -53,7 +54,7 @@ class environment(object):
         self.shadowValue = 8
         self.snowValue = 16
 
-        self.LTAimageId = 'projects/servir-hkh/nk-comp/shadowLTA'
+        self.LTAimageId = 'projects/servir-hkh/ncomp_seasonal_30/shadowLTA'
 
         # cloudScoreThresh: If using the cloudScoreTDOMShift method - Threshold for cloud
         # masking(lower number masks more clouds.Between 10 and 30 generally
@@ -88,3 +89,6 @@ class environment(object):
         self.medianIncludeBands = ['blue', 'green', 'red', 'nir', 'swir1', 'swir2']
         self.stdevIncludeBands = ['blue', 'green', 'red', 'nir', 'swir1', 'swir2']
         self.otherIncludeBands = []
+        self.percentileBands = ['green','nir', 'ND_nir_swir2', 'ND_green_swir1', 'ND_nir_red']
+        self.inversePercentileBands = ['blue','red','swir1','swir2']
+        self.percentiles = [20,80]

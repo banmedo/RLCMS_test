@@ -60,14 +60,14 @@ def getComposites(args):
     imageColl = cloudBurst().runModel(imageColl, args['region'])
     imageColl = brdf().runModel(imageColl)
     imageColl = terrainCorrection().runModel(imageColl)
-    composite = createComposite().getMedoidAndStdevs(imageColl)
+    composite = createComposite().getMedoidAndPercentiles(imageColl)
     assetID = str(args['year'])
-    imageCollectionID = envs.collFolder+args['season']+'/'
+    imageCollectionID = envs.yearlyCollFolder+'composites/'
     print(composite.bandNames().getInfo())
     exportHelper(composite, assetID, imageCollectionID, args)
 
 if (__name__ == '__main__'):
-    season = 'rainy'
+    season = 'allyear'
     year = 2015
     # nepal = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw').filter(ee.Filter.inList('Country', ['Nepal'])).first().geometry().getInfo()
     # print(nepal)
@@ -75,7 +75,5 @@ if (__name__ == '__main__'):
     nepal = envs.nepal
     # getComposites({'year': year, 'region': nepal, 'season': season})
 
-    for year in range(2016,2018):
-        getComposites({'year': year, 'region': nepal, 'season': 'dryhot'})
-        getComposites({'year': year, 'region': nepal, 'season': 'drycool'})
-        getComposites({'year': year, 'region': nepal, 'season': 'rainy'})
+    for year in range(2000,2018):
+        getComposites({'year': year, 'region': nepal, 'season': season})

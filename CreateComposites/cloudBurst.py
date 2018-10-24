@@ -61,7 +61,7 @@ class cloudBurst(object):
         # irStdDev = allCollection.select(shadowSumBands).reduce(ee.Reducer.stdDev())
         # irMean = allCollection.select(shadowSumBands).mean()
 
-        LTA = ee.Image(self.envs.LTAimageId).multiply(1 / 10000);
+        LTA = ee.Image(self.envs.LTAimageId).divide(10000);
         irStdDev = LTA.select(['nir_stdDev', 'swir1_stdDev'], ['nir', 'swir1']);
         irMean = LTA.select(['nir', 'swir1'])
 

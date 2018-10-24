@@ -152,3 +152,9 @@ class addCovariates(object):
         withIsoBands = self.addIsolatedBands(ee.Image(seasonalBands))
 
         return self.addTerrain(withIsoBands)
+
+    def runModelYearly(self, repository, year):
+        image = ee.Image(repository+'composites/'+str(year))
+        image = self.computeCovariates(image)
+        withIsoBands = self.addIsolatedBands(image)
+        return self.addTerrain(withIsoBands)
