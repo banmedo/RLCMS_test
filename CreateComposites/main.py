@@ -75,7 +75,7 @@ if (__name__ == '__main__'):
     nepal = envs.nepal
     # getComposites({'year': year, 'region': nepal, 'season': season})
 
-    for year in range(2016,2018):
+    for year in range(2000,2018):
         getComposites({'year': year, 'region': nepal, 'season': 'dryhot'})
         getComposites({'year': year, 'region': nepal, 'season': 'drycool'})
         getComposites({'year': year, 'region': nepal, 'season': 'rainy'})

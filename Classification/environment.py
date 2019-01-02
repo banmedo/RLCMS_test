@@ -49,11 +49,16 @@ class environment(object):
         ]
 
         nepalBounds = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw').filter(ee.Filter.inList('Country', ['Nepal'])).first().geometry()
+        # nep2 = ee.FeatureCollection('projects/servir-hkh/RLCMSsmooth/regions').geometry()
+
         self.boundary = nepalBounds.buffer(20000).getInfo()
+        # self.boundary = nep2.buffer(1000).getInfo()
 
         # self.trainingPoints = ee.FeatureCollection('projects/servir-hkh/RLCMS_Nepal07302018/Training_Sample/Nepal_samples_all_validation')
         self.sampledPoints = ee.FeatureCollection('ft:19bCYESQ-6vx3_ZOaLkycfIoSqjYcwJPXIz8LXyOw')
-        self.sampledPointsYearly = ee.FeatureCollection('ft:1MNedvQZU_EqeffoGxLoLxgSgFpl0fjLnHkAgQX0x')
+        # self.sampledPointsYearly = ee.FeatureCollection('ft:1MNedvQZU_EqeffoGxLoLxgSgFpl0fjLnHkAgQX0x')
+        # training data yearly generated subset
+        self.sampledPointsYearly = ee.FeatureCollection('ft:1QIJfG0aLtpvIiu1RlUYcx00U5LgJavhYnMnjRDWV')
         # training data contains following classes
         # cropland
         # forest
@@ -62,8 +67,12 @@ class environment(object):
         # settlement
         # wetland
 
-        self.inputLandClass = 'land_use_c'
-        self.yearField = 'rs_date_ye'
+        # self.inputLandClass = 'land_use_c'
+        # self.yearField = 'rs_date_ye'
+
+        # training data fields
+        self.inputLandClass = 'landClass'
+        self.yearField = 'year'
 
         self.sampleScale = 30
 

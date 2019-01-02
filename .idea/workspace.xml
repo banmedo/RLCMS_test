@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51a292db-db3a-49a8-91c2-2a08bee21587" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Classification/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Classification/environment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Classification/mainYearly.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreateComposites/mainYearly.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Smoothing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assemblage/environment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assemblage/mainYearly.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smoothing/FourierSmoothing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smoothing/LinearFit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smoothing/smoothenComposites.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classification/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classification/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classification/mainYearly.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classification/mainYearly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CreateComposites/brdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/brdf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CreateComposites/cloudBurst.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/cloudBurst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CreateComposites/compositing.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/compositing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CreateComposites/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/environment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CreateComposites/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CreateComposites/mainYearly.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/mainYearly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CreateComposites/terrain2.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateComposites/terrain2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smoothing/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Smoothing/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Training/addCovariates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training/addCovariates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training/classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classification/classify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classification/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training/sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training/sample.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,35 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sample.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Training/sample.py">
+      <file leaf-file-name="mainYearly.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assemblage/mainYearly.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainYearly.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classification/mainYearly.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="1" selection-end-line="4" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Classification/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="372">
+              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -68,10 +44,10 @@
         </entry>
       </file>
       <file leaf-file-name="environment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classification/environment.py">
+        <entry file="file://$PROJECT_DIR$/Assemblage/environment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+            <state relative-caret-position="425">
+              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -96,6 +72,9 @@
       <find>testRe</find>
       <find>//</find>
       <find>classification</find>
+      <find>sele</find>
+      <find>getInfo</find>
+      <find>getIn</find>
     </findStrings>
     <replaceStrings>
       <replace>self.envs.PI</replace>
@@ -123,7 +102,6 @@
         <option value="$PROJECT_DIR$/environment.py" />
         <option value="$PROJECT_DIR$/compositing.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/CreateComposites/terrain2.py" />
         <option value="$PROJECT_DIR$/CreateComposites/importImages.py" />
         <option value="$PROJECT_DIR$/Classification/__init__.py" />
         <option value="$PROJECT_DIR$/Training/__init__.py" />
@@ -131,27 +109,34 @@
         <option value="$PROJECT_DIR$/test/utils.py" />
         <option value="$PROJECT_DIR$/test/whittakerExample.py" />
         <option value="$PROJECT_DIR$/test/WhittakerSmoothing.py" />
-        <option value="$PROJECT_DIR$/Smoothing/WhittakerSmoothing.py" />
-        <option value="$PROJECT_DIR$/CreateComposites/cloudBurst.py" />
-        <option value="$PROJECT_DIR$/CreateComposites/main.py" />
         <option value="$PROJECT_DIR$/CreateComposites/compositing.py" />
-        <option value="$PROJECT_DIR$/CreateComposites/environment.py" />
-        <option value="$PROJECT_DIR$/CreateComposites/mainYearly.py" />
         <option value="$PROJECT_DIR$/Training/main.py" />
         <option value="$PROJECT_DIR$/Training/mainYearly.py" />
         <option value="$PROJECT_DIR$/Training/sample.py" />
-        <option value="$PROJECT_DIR$/Training/addCovariates.py" />
-        <option value="$PROJECT_DIR$/Training/environment.py" />
-        <option value="$PROJECT_DIR$/Classification/environment.py" />
-        <option value="$PROJECT_DIR$/Classification/mainYearly.py" />
         <option value="$PROJECT_DIR$/Classification/main.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/main.py" />
+        <option value="$PROJECT_DIR$/Training/addCovariates.py" />
+        <option value="$PROJECT_DIR$/Smoothing/utils.py" />
+        <option value="$PROJECT_DIR$/Smoothing/WhittakerSmoothing.py" />
+        <option value="$PROJECT_DIR$/Smoothing/FourierSmoothing.py" />
+        <option value="$PROJECT_DIR$/Smoothing/LinearFit.py" />
+        <option value="$PROJECT_DIR$/Smoothing/smoothenComposites.py" />
+        <option value="$PROJECT_DIR$/Training/environment.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/cloudBurst.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/terrain2.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/environment.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/mainYearly.py" />
+        <option value="$PROJECT_DIR$/CreateComposites/brdf.py" />
+        <option value="$PROJECT_DIR$/Classification/mainYearly.py" />
+        <option value="$PROJECT_DIR$/Classification/environment.py" />
+        <option value="$PROJECT_DIR$/Assemblage/environment.py" />
+        <option value="$PROJECT_DIR$/Assemblage/mainYearly.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="840" />
-    <option name="width" value="840" />
-    <option name="height" value="1020" />
+    <option name="width" value="600" />
+    <option name="height" value="570" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -171,12 +156,12 @@
             <path>
               <item name="RLCMS_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="RLCMS_python" type="462c0819:PsiDirectoryNode" />
-              <item name="Classification" type="462c0819:PsiDirectoryNode" />
+              <item name="Assemblage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RLCMS_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="RLCMS_python" type="462c0819:PsiDirectoryNode" />
-              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name="Classification" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -186,6 +171,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/nkdev/webdev/RLCMS_python/Classification/mainYearly.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../LandCoverMonitoring" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
@@ -219,8 +205,62 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.mainYearly (2)">
+    <configuration name="FourierSmoothing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RLCMS_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Smoothing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Smoothing/FourierSmoothing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="mainYearly (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RLCMS_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classification" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classification/mainYearly.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="mainYearly (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RLCMS_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assemblage" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assemblage/mainYearly.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="mainYearly" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLCMS_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -232,15 +272,44 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CreateComposites/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CreateComposites/mainYearly.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="smoothenComposites" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RLCMS_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Smoothing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Smoothing/smoothenComposites.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.smoothenComposites" />
+      <item itemvalue="Python.FourierSmoothing" />
+      <item itemvalue="Python.mainYearly" />
+      <item itemvalue="Python.mainYearly (1)" />
+      <item itemvalue="Python.mainYearly (2)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.mainYearly (2)" />
+        <item itemvalue="Python.mainYearly (1)" />
+        <item itemvalue="Python.mainYearly" />
+        <item itemvalue="Python.smoothenComposites" />
+        <item itemvalue="Python.FourierSmoothing" />
       </list>
     </recent_temporary>
   </component>
@@ -267,15 +336,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.16666667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.13510254" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32964602" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50060314" side_tool="true" weight="0.2289823" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32964602" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.44137168" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30973452" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38163716" />
       <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" weight="0.13510254" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49939686" weight="0.2289823" />
       <window_info id="Favorites" order="2" sideWeight="0.50165015" side_tool="true" weight="0.13510254" />
@@ -286,7 +356,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -382,6 +451,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
           <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="e#624#643#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -399,27 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CreateComposites/brdf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3128">
-          <caret line="184" column="88" selection-start-line="184" selection-start-column="88" selection-end-line="184" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreateComposites/terrain2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="138" column="17" lean-forward="true" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreateComposites/importImages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="105" column="41" lean-forward="true" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classification/main.py" />
     <entry file="file://$PROJECT_DIR$/Smoothing/whittakerExample.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -428,53 +479,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Smoothing/WhittakerSmoothing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1749">
-          <caret line="113" column="25" lean-forward="true" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Smoothing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Smoothing/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Training/init.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CreateComposites/cloudBurst.py">
+    <entry file="file://$PROJECT_DIR$/Classification/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        <state relative-caret-position="646">
+          <caret line="38" column="40" lean-forward="true" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CreateComposites/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        <state relative-caret-position="723">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CreateComposites/mainYearly.py">
+    <entry file="file://$PROJECT_DIR$/Training/sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classification/classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training/addCovariates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smoothing/FourierSmoothing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="e#672#691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smoothing/LinearFit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smoothing/WhittakerSmoothing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-607">
+          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding>
+            <element signature="e#624#643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smoothing/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smoothing/smoothenComposites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CreateComposites/compositing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="-2">
           <caret line="124" column="20" lean-forward="true" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
           <folding>
             <element signature="e#111#160#0" />
@@ -484,77 +595,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CreateComposites/environment.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/cloudBurst.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="206">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Smoothing/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Training/addCovariates.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/terrain2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="359">
+          <caret line="137" column="79" selection-start-line="137" selection-start-column="74" selection-end-line="137" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateComposites/importImages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2567">
+          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateComposites/mainYearly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Training/init.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Training/environment.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/brdf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="63" column="42" lean-forward="true" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+        <state relative-caret-position="389">
+          <caret line="184" column="56" selection-start-line="184" selection-start-column="56" selection-end-line="184" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Training/sample.py">
+    <entry file="file://$PROJECT_DIR$/CreateComposites/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classification/classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classification/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+        <state relative-caret-position="-2">
+          <caret line="57" column="66" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classification/mainYearly.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="1" selection-end-line="4" />
+        <state relative-caret-position="374">
+          <caret line="58" column="100" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="58" selection-end-column="100" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classification/main.py">
+    <entry file="file://$PROJECT_DIR$/Assemblage/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="425">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assemblage/mainYearly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

@@ -56,14 +56,14 @@ class cloudBurst(object):
 
         # allCollection = importImages().getImagesInYearRange({'startyear':2000,'endyear':2001,'region':studyArea})\
         #     .select(shadowSumBands)
-        # allCollection = collection
+        allCollection = collection
         # Get some pixel - wise stats for the time series
-        # irStdDev = allCollection.select(shadowSumBands).reduce(ee.Reducer.stdDev())
-        # irMean = allCollection.select(shadowSumBands).mean()
+        irStdDev = allCollection.select(shadowSumBands).reduce(ee.Reducer.stdDev())
+        irMean = allCollection.select(shadowSumBands).mean()
 
-        LTA = ee.Image(self.envs.LTAimageId).divide(10000);
-        irStdDev = LTA.select(['nir_stdDev', 'swir1_stdDev'], ['nir', 'swir1']);
-        irMean = LTA.select(['nir', 'swir1'])
+        # LTA = ee.Image(self.envs.LTAimageId).divide(10000);
+        # irStdDev = LTA.select(['nir_stdDev', 'swir1_stdDev'], ['nir', 'swir1']);
+        # irMean = LTA.select(['nir', 'swir1'])
 
         def maskDarkOutliers(img):
             zScore = img.select(shadowSumBands).subtract(irMean).divide(irStdDev)
@@ -79,5 +79,5 @@ class cloudBurst(object):
         imageCollection = imageCollection.map(self._landsatCloudScoreMask)
         imageCollection = imageCollection.map(self._cloudMask)
         imageCollection = self._shadowMask(imageCollection, region)
-        print("Process Update: Clouds and Shadows removed!", imageCollection.size().getInfo())
+        print("Process Update: Clouds and Shadows removed!")#, imageCollection.size().getInfo())
         return imageCollection

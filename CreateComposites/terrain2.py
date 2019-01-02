@@ -135,5 +135,5 @@ class terrainCorrection(object):
     def runModel(self, imageCollection):
         ic = imageCollection.map(self.topoCorr_IC)
         ic = ic.map(self.topoCorr_SCSc)
-        print("Process Update: Terrain Correction complete!", ic.size().getInfo())
+        print("Process Update: Terrain Correction complete!")#, ic.size().getInfo())
         return ic

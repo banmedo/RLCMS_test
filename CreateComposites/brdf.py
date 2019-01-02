@@ -182,5 +182,5 @@ class brdf(object):
 
     def runModel(self, imageCollection):
         imageCollection = imageCollection.map(self._applyBRDF)
-        print ("Process Update: BRDF correction done!", imageCollection.size().getInfo())
+        print ("Process Update: BRDF correction done!")#, imageCollection.size().getInfo())
         return imageCollection

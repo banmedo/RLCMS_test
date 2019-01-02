@@ -56,14 +56,14 @@ def getComposites(args):
         args['SLC'] = envs.defaults['SLC']
     importImg = importImages()
     imageColl = importImg.getImagesInAYear(args)
-    print("Number of Images Found: ", imageColl.size().getInfo())
+    print("Number of Images Found: ")#, imageColl.size().getInfo())
     imageColl = cloudBurst().runModel(imageColl, args['region'])
     imageColl = brdf().runModel(imageColl)
     imageColl = terrainCorrection().runModel(imageColl)
     composite = createComposite().getMedoidAndPercentiles(imageColl)
     assetID = str(args['year'])
-    imageCollectionID = envs.yearlyCollFolder+'composites/'
-    print(composite.bandNames().getInfo())
+    imageCollectionID = envs.yearlyCollFolder+args['repo']+'composites/'
+    #print(composite.bandNames().getInfo())
     exportHelper(composite, assetID, imageCollectionID, args)
 
 if (__name__ == '__main__'):
@@ -72,8 +72,9 @@ if (__name__ == '__main__'):
     # nepal = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw').filter(ee.Filter.inList('Country', ['Nepal'])).first().geometry().getInfo()
     # print(nepal)
 
-    nepal = envs.nepal
+    region = envs.afgn
     # getComposites({'year': year, 'region': nepal, 'season': season})
 
     for year in range(2000,2018):
-        getComposites({'year': year, 'region': nepal, 'season': season})
+        print('trying to export for '+ str(year))
+        getComposites({'year': year, 'region': region, 'season': season, 'repo':'afgn_'})

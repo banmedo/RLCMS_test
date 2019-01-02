@@ -49,7 +49,7 @@ class classify(object):
         task =  ee.batch.Export.image.toAsset(
             image =  image,
             description= 'Export-' + primitive + '-' + year,
-            assetId= self.envs.repositoryYearly + 'primi/' + primitive + '-' + year,
+            assetId= self.envs.repositoryYearly + 'primitives/' + primitive + '-' + year,
             region= self.envs.boundary['coordinates'],
             scale= self.envs.exportScale,
             maxPixels = 1e13

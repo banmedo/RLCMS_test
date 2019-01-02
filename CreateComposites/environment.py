@@ -8,8 +8,23 @@ class environment(object):
         self.collFolder = 'projects/servir-hkh/ncomp_seasonal_30/'
         self.yearlyCollFolder = 'projects/servir-hkh/ncomp_yearly_30/'
         self.exportScale = 30
-
-        self.nepal = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw').filter(ee.Filter.inList('Country', ['Nepal'])).first().geometry().buffer(20000).getInfo()
+        # # Nepal -done
+        # self.nepal = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw').filter(
+        #     ee.Filter.inList('Country', ['Nepal'])).first().geometry().buffer(20000).getInfo()
+        # Afghanistan -wip
+        self.afgn = ee.FeatureCollection('users/khanalnishant/ICIMOD/RLCMS/Afghanistan_hkhintersection').first().geometry().buffer(20000).getInfo()
+        # # Pakistan
+        # self.pak = ee.FeatureCollection('users/khanalnishant/ICIMOD/RLCMS/Pakistan_hkhintersection').first().geometry().buffer(20000).getInfo()
+        # # India
+        # self.ind = ee.FeatureCollection('users/khanalnishant/ICIMOD/RLCMS/India_hkhintersection').first().geometry().buffer(20000).getInfo()
+        # # Bangladesh
+        # self.bang = ee.FeatureCollection('users/khanalnishant/ICIMOD/RLCMS/Bangladesh_hkhintersection').first().geometry().buffer(20000).getInfo()
+        # # Bhutan
+        # self.bhu = ee.FeatureCollection('users/khanalnishant/ICIMOD/RLCMS/Bhutan_hkhintersection').first().geometry().buffer(20000).getInfo()
+        # # Myanmar
+        # self.myan = ee.FeatureCollection('users/khanalnishant/ICIMOD/RLCMS/Myanmar_hkhintersection').first().geometry().buffer(20000).getInfo()
+        # # China
+        # self.chin = ee.FeatureCollection('users/khanalnishant/ICIMOD/RLCMS/China_hkhintersection').first().geometry().buffer(20000).getInfo()
 
         # setting up variables
         self.seasons = {

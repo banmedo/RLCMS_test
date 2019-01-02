@@ -5,6 +5,7 @@ ee.Initialize()
 # takes an array image, list of image IDs and list
 # of band names as arguments
 def unpack(arrayImage, imageIds, bands):
+    # print(imageIds.getInfo(), bands.getInfo())
     def iter(item, icoll):
         def innerIter(innerItem, innerList):
             return ee.List(innerList).add(ee.String(item).cat("_").cat(ee.String(innerItem)))

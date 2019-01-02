@@ -158,3 +158,8 @@ class addCovariates(object):
         image = self.computeCovariates(image)
         withIsoBands = self.addIsolatedBands(image)
         return self.addTerrain(withIsoBands)
+
+    def runModelYearlyOnImage(self, image):
+        image = self.computeCovariates(image)
+        withIsoBands = self.addIsolatedBands(image)
+        return self.addTerrain(withIsoBands)
